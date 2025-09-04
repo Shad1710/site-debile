@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Fun Version Ultra Débile 😜</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(45deg, red, yellow, blue, pink, green);
+            font-family: Comic Sans MS, sans-serif;
+            animation: bgMove 5s linear infinite;
+        }
+        @keyframes bgMove {
+            0% {background-position: 0% 50%;}
+            50% {background-position: 100% 50%;}
+            100% {background-position: 0% 50%;}
+        }
+        h1 {
+            font-size: 5rem;
+            color: white;
+            text-shadow: 2px 2px 10px black;
+            animation: bounce 1s infinite alternate, flash 0.5s infinite;
+        }
+        @keyframes bounce {
+            0% {transform: scale(1);}
+            50% {transform: scale(1.5) rotate(10deg);}
+            100% {transform: scale(1) rotate(-10deg);}
+        }
+        @keyframes flash {
+            0%, 100% {opacity: 1;}
+            50% {opacity: 0;}
+        }
+        .confetti {
+            position: fixed;
+            width: 10px;
+            height: 10px;
+            background-color: white;
+            animation: fall 3s linear infinite;
+        }
+        @keyframes fall {
+            0% {transform: translateY(0) rotate(0deg);}
+            100% {transform: translateY(100vh) rotate(360deg);}
+        }
+    </style>
+</head>
+<body>
+    <h1>🎉 Fun Version ! 💥✨</h1>
+
+    <!-- Confettis -->
+    <div class="confetti" style="left:10%;background:red;"></div>
+    <div class="confetti" style="left:30%;background:yellow;"></div>
+    <div class="confetti" style="left:50%;background:blue;"></div>
+    <div class="confetti" style="left:70%;background:pink;"></div>
+    <div class="confetti" style="left:90%;background:green;"></div>
+
+</body>
+</html>
